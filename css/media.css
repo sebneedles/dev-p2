@@ -1,0 +1,144 @@
+/* ------------------------
+Laptops & fullscreen
+------------------------ */
+@media screen and (max-width: 992px) {
+    .formFilter {
+        width: 95%;
+    }
+}
+
+/* ------------------------
+Smartphones & tablets
+------------------------ */
+@media screen and (max-device-width: 768px) {
+/* ----- Header ----- */
+    header {
+        width: 100%;
+        flex-flow: column;
+    }
+
+    .logo {
+        place-self: center;
+        margin: 30px auto 0 auto;
+        height: 29px;
+    }
+
+/* ----- Navigation ----- */
+    nav {
+        display: flex;
+        place-self: unset;
+        width: 100%;
+        margin-top: 30px;
+    }
+    nav li {
+        width: 50%;
+        text-align: center;
+    }
+
+    nav li a {
+    color: #000;
+    text-decoration: none;
+    padding: 3px 0 15px 0;
+    border-top: unset;
+    border-bottom: #F2F2F2 3px solid;
+    }
+
+    nav li a:hover {
+        color: #0065FC;
+        text-decoration: none;
+        border-bottom: #0065FC 3px solid;
+        border-top: unset;
+        padding: 3px 0 15px 0;
+    }
+
+/* ----- Main ----- */
+    main {
+        display: flex;
+        justify-content: center;
+        margin-top: 80px;
+    }
+
+    .formFilter {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+/* ----- Formulaire ----- */
+    form {
+        margin: 20px 0 0 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    input[type="text"] {
+        border-right: none;
+        border-left: none;
+        border-top: #F2F2F2 1px solid;
+        border-bottom: #F2F2F2 1px solid;
+        padding: 16px 20px;
+        width: 100%;
+        font-size: 16px;
+        font-weight: 700;
+    }
+
+    .iconButton i {
+        display: flex;
+    }
+    .txtButton {
+        display: none;
+    }
+
+/* ----- Filtre ----- */
+    #filter {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        margin: 30px 0;
+        justify-content: space-between;
+    }
+    h2 {
+        width: 100%;
+    }
+
+    .filterItem {
+        margin: 10px 24px 10px 0px;
+    }
+
+    .iconResult {
+        height: 23px;
+        width: 23px;
+        border: solid 3px #F2F2F2;
+        border-radius: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 23px;
+        color: #0065FC;
+        font-size: 12px;
+        font-weight: 700;
+    }
+
+/* ----- Hebergements ----- */
+    .hebergement {
+        flex-flow: column;
+        width: 100%;
+    }
+
+    .sideTotal {
+        width: 100%;
+    }
+
+    .sideLeft {
+        height: unset;
+    background-color: unset;
+    }
+
+    .hebergementItem {
+        width: 100%;
+        background-color: #fff;
+        height: 240px;
+        min-height: 190px;
+        box-shadow: 0px 0px 5px 5px #f2f2f2;
+        margin: 5% auto;
+    }
+}

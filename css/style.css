@@ -1,24 +1,330 @@
+/* ------------------------
+Body
+------------------------ */
 body{
-    font-family: "Roboto", sans-serif;
+    font-family: "Raleway", sans-serif;
+    max-width: 1440px;
+    margin: auto;
 }
 
-/* Header */
-nav{
+/* ------------------------
+Header
+------------------------ */
+header{
+    width: 90%;
     display: flex;
     justify-content: space-between;
+    align-items: flex-end;
+    height: 80px;
+    margin: 0 auto;
+}
+.logo {
+    width: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    margin-left: 20px;
+}
+
+/* ------------------------
+Navigation
+------------------------ */
+nav{
+    width: 300px;
+}
+nav ul {
+    list-style-type: none;
+    display: flex;
+    width: 100%;
+    margin-block-end: 15px;
+    padding-inline-start: 0px;
+}
+
+nav li {
+    width: 50%;
+    text-align: center;
+}
+
+nav a {
+    font-size: 16px;
+    color: #000;
+    text-decoration: none;
+    padding: 41px 0 3px 0;
+    width: 100%;
+    display: block;
+    border-top: 3px solid transparent;
+    transition: 300ms;
+}
+
+nav a:hover {
+    color: #0065FC;
+    border-top: 3px solid #0065FC;
+    transition: 300ms;
+}
+
+/* ------------------------
+Main
+------------------------ */
+section {
+    width: 90%;
+    display: flex;
+    margin: 24px auto;
+}
+
+main {
+    width: 100%;
+    max-width: 1440px;
+    margin: 30px auto 0 auto;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+main p {
+    font-size: 16px;
+    font-weight: normal;
+}
+/* ------------------------
+Formulaire
+------------------------ */
+form {
+    margin: 20px 0 0 0;
+    display: flex;
+}
+
+.formFilter {
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+#iconForm {
+    background-color: #F2F2F2;
+    padding: 16px 20px;
+    border-radius: 16px 0 0 16px;
+}
+
+input[type="text"] {
+    border-right: none;
+    border-left: none;
+    border-top: #F2F2F2 1px solid;
+    border-bottom: #F2F2F2 1px solid;
+    padding: 16px 20px;
+    width: 235px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+button {
+    background-color: #0065FC;
+    color: white;
+    font-weight: 700;
+    border: none;
+    border-radius: 0 16px 16px 0;
+    padding: 16px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.iconButton i {
+    display: none;
+}
+
+.ref::before {
+    content: "Rechercher ";
+  }
+
+/* ------------------------
+Filtre
+------------------------ */
+#filter {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 16px 0;
+}
+
+#filter h2 {
+    align-self: center;
+    margin: 0px 30px 8px 0px;
+    font-size: 20px;
+}
+
+h3 {
+    font-weight: 600;
+}
+
+.filterItem {
+    border: 3px solid #F2F2F2;
+    margin: 0px 24px 8px 0px;
+    display: flex;
+    align-items: center;
+    border-radius: 30px;
+    transition: 300ms;
+}
+
+.filterItem:hover {
+    cursor: pointer;
+    border: 3px solid #DEEBFF;
+    background-color: #DEEBFF;
+    color: #0065FC;
+    transition: 300ms;
+}
+
+.iconFilter {
+    background-color: #DEEBFF;
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    margin: -3px;
+}
+
+.txtFilter {
+    font-weight: bold;
+    margin: 0 16px;
+}
+
+.txtFilter span {
+    text-transform: uppercase;
+}
+
+.iconItem {
+    color: #0065FC;
+    width: 16px;
+    text-align: center;
+}
+
+.resultFilter {
+    display: flex;
+    align-content: center;
     align-items: center;
 }
 
-nav img{
-    width: 122px;
-    margin: 52px 0 0 0;
-}
-
-nav ul{
+.iconResult {
+    height: 28px;
+    width: 28px;
+    border: solid 3px #F2F2F2;
+    border-radius: 100%;
     display: flex;
-    list-style: none;
+    align-items: center;
+    justify-content: center;
+    margin-right: 16px;
+    color: #0065FC;
+    font-size: 14px;
 }
 
-nav li{
-    margin: 51px 68px 0 0;
+.resultFilter p {
+    font-size: 16px;
+    font-weight: normal;
+    color: #000;
+}
+
+/* ------------------------
+Hébergement
+------------------------ */
+.hebergement {
+    justify-content: space-between;
+}
+
+.sideTotal {
+    height: 626px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 22px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    background-color: #F2F2F2;
+}
+
+.sideLeft {
+    width: 65%;
+    justify-content: space-between;
+}
+
+.sideLeft h2 {
+    width: 100%;
+    align-self: center;
+    min-width: 260px;
+}
+
+.hebergementItem {
+    height: 200px;
+    width: 246px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 4px;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 10px 1px #d5d3d3;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    transition: 300ms;
+}
+
+.hebergementItem:hover {
+    box-shadow: none;
+    transition: 300ms;
+}
+
+.hebergementItem a {
+    height: 100%;
+    text-decoration: none;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    transition: 300ms;
+}
+
+.hebergementItem a:hover {
+    color: #0065FC;
+    transition: 300ms;
+    box-shadow: none;
+}
+
+.hebergementItem img {
+    width: 100%;
+    height: 55%;
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+    opacity: 1;
+    transition: 300ms;
+}
+
+.hebergementItem img:hover {
+    opacity: .7;
+    transition: 300ms;
+}
+
+.itemDescription {
+    height: 45%;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+    padding-left: 3%;
+}
+
+.itemDescription h4 {
+    font-weight: 700;
+    margin: 5px 0 0 0;
+}
+
+.itemDescription p {
+    font-weight: normal;
+    margin: 5px 0;
+}
+
+.itemDescription .notation {
+    display: flex;
+}
+
+.blueStar {
+    color: #0065FC;
+}
+
+.greyStar {
+    color: #F2F2F2;
 }
