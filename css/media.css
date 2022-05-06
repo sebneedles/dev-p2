@@ -5,12 +5,46 @@ Laptops & fullscreen
     .formFilter {
         width: 95%;
     }
+
+    .itemDescriptHeberg h4 {
+        font-size: 13px;
+    }
+
+    .itemDescriptPop h4 {
+        font-size: 13px;
+    }
+
+    .itemDescriptHeberg p {
+        font-size: 13px;
+    }
+
+    .itemDescriptPop p {
+        margin: 5px 0 28px 0;
+        font-size: 13px;
+    }
+
+    /* .hebergement {
+        flex-flow: column;
+        width: 100%;
+    }
+
+    .sideLeft {
+        width: 100%;
+        border-radius: unset;
+    }
+
+    .sideRight {
+        width: 100%;
+        height: 750px;
+        margin: 32px auto;
+        border-radius: unset;
+    } */
 }
 
 /* ------------------------
 Smartphones & tablets
 ------------------------ */
-@media screen and (max-device-width: 768px) {
+@media screen and (max-width: 768px) {
 /* ----- Header ----- */
     header {
         width: 100%;
@@ -105,10 +139,10 @@ Smartphones & tablets
     }
 
     .iconResult {
-        height: 23px;
-        width: 23px;
+        height: 22px;
+        width: 26px;
         border: solid 3px #F2F2F2;
-        border-radius: 100%;
+        border-radius: 50%;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -120,7 +154,7 @@ Smartphones & tablets
 
 /* ----- Hebergements ----- */
     .hebergement {
-        flex-flow: column;
+        flex-flow: column-reverse;
         width: 100%;
     }
 
@@ -130,7 +164,7 @@ Smartphones & tablets
 
     .sideLeft {
         height: unset;
-    background-color: unset;
+        background-color: unset;
     }
 
     .hebergementItem {
@@ -140,5 +174,30 @@ Smartphones & tablets
         min-height: 190px;
         box-shadow: 0px 0px 5px 5px #f2f2f2;
         margin: 5% auto;
+    }
+
+    .sideRight {
+        border-radius: unset;
+    }
+
+    .itemDescriptHeberg h4 {
+        font-size: 16px;
+    }
+
+    .itemDescriptPop h4 {
+        font-size: 16px;
+    }
+
+    .itemDescriptHeberg {
+        justify-content: center;
+    }
+
+    .itemDescriptHeberg p {
+        font-size: 14px;
+    }
+
+    .itemDescriptPop p {
+        margin: 5px 0 28px 0;
+        font-size: 14px;
     }
 }

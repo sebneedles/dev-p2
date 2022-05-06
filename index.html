@@ -2,8 +2,8 @@
 <html lang="fr">
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projet 2 | Sébastien Pansini</title>
     
     <link type="text/css" rel="stylesheet" href="css/normalize.css">
@@ -23,8 +23,8 @@
         <!-- Navigation -->
         <nav>
             <ul>
-                <li><a href="#">Hébergements</a></li>
-                <li><a href="#">Activités</a></li>
+                <li><a href="#hebergements">Hébergements</a></li>
+                <li><a href="#activites">Activités</a></li>
             </ul>
         </nav>
     </header>
@@ -47,7 +47,7 @@
                     <h2>Filtres</h2>
                     <div class="filterItem">
                         <div class="iconFilter">
-                            <i class="fa-solid fa-ticket iconItem"></i>
+                            <i class="fa-solid fa-money-bill-wave iconItem"></i>
                         </div>
                         <div class="txtFilter"><span>é</span>conomique</div>
                     </div>
@@ -78,15 +78,16 @@
                 </div>
             </section>
 
-            <!-- Hébergements -->
-            <section class="hebergement">
+            <!-- Conteneur principal -->
+            <section class="hebergement" id="hebergements">
+                <!-- Hébergement left -->
                 <article class="sideTotal sideLeft">
                     <h2>Hébergements à Marseille</h2>
                     <div class="hebergementItem">
-                        <a href="#">
-                            <img src="./assests/imgs/hebergement/marcus-loke.jpg" alt="Auberge de la Cannebière">
-                            <div class="itemDescription">
-                                <h4>Auberge de la Cannebière</h4>
+                        <a href="">
+                            <img src="./assests/imgs/hebergement/marcus-loke.jpg" alt="Auberge la Cannebière">
+                            <div class="itemDescriptHeberg">
+                                <h4>Auberge la Cannebière</h4>
                                 <p>Nuit à partir de <strong>25 €</strong></p>
                                 <div class="notation">
                                     <i class="fas fa-star blueStar"></i>
@@ -99,11 +100,11 @@
                         </a>
                     </div>
                     <div class="hebergementItem">
-                        <a href="#">
+                        <a href="">
                             <img src="./assests/imgs/hebergement/fred-kleber.jpg" alt="Auberge de la Cannebière">
-                            <div class="itemDescription">
+                            <div class="itemDescriptHeberg">
                                 <h4>Hôtel du port</h4>
-                                <p>Nuit à partir de <strong>52 €</strong></p>
+                                <p>Nuit à partir de 52 <strong>€</strong></p>
                                 <div class="notation">
                                     <i class="fas fa-star blueStar"></i>
                                     <i class="fas fa-star blueStar"></i>
@@ -115,11 +116,11 @@
                         </a>
                     </div>
                     <div class="hebergementItem">
-                        <a href="#">
+                        <a href="">
                             <img src="./assests/imgs/hebergement/reisetopia.jpg" alt="Hôtel les mouettes">
-                            <div class="itemDescription">
+                            <div class="itemDescriptHeberg">
                                 <h4>Hôtel les mouettes</h4>
-                                <p>Nuit à partir de <strong>76 €</strong></p>
+                                <p>Nuit à partir de 76 <strong>€</strong></p>
                                 <div class="notation">
                                     <i class="fas fa-star blueStar"></i>
                                     <i class="fas fa-star blueStar"></i>
@@ -131,11 +132,11 @@
                         </a>
                     </div>
                     <div class="hebergementItem">
-                        <a href="#">
+                        <a href="">
                             <img src="./assests/imgs/hebergement/annie-spratt.jpg" alt="Hôtel de la mer">
-                            <div class="itemDescription">
+                            <div class="itemDescriptHeberg">
                                 <h4>Hôtel de la mer</h4>
-                                <p>Nuit à partir de <strong>46 €</strong></p>
+                                <p>Nuit à partir de 46 <strong>€</strong></p>
                                 <div class="notation">
                                     <i class="fas fa-star blueStar"></i>
                                     <i class="fas fa-star blueStar"></i>
@@ -147,9 +148,9 @@
                         </a>
                     </div>
                     <div class="hebergementItem">
-                        <a href="#">
+                        <a href="">
                             <img src="./assests/imgs/hebergement/nicate-lee.jpg" alt="Auberge le panier">
-                            <div class="itemDescription">
+                            <div class="itemDescriptHeberg">
                                 <h4>Auberge le panier</h4>
                                 <p>Nuit à partir de <strong>23 €</strong></p>
                                 <div class="notation">
@@ -163,11 +164,11 @@
                         </a>
                     </div>
                     <div class="hebergementItem">
-                        <a href="#">
+                        <a href="">
                             <img src="./assests/imgs/hebergement/febrian-zakaria.jpg" alt="Hôtel chez Amina">
-                            <div class="itemDescription">
+                            <div class="itemDescriptHeberg">
                                 <h4>Hôtel chez Amina</h4>
-                                <p>Nuit à partir de <strong>96 €</strong></p>
+                                <p>Nuit à partir de 96 <strong>€</strong></p>
                                 <div class="notation">
                                     <i class="fas fa-star blueStar"></i>
                                     <i class="fas fa-star blueStar"></i>
@@ -182,8 +183,73 @@
                         <h3>Afficher plus</h3>
                     </div>
                 </article>
+
+                <!-- Hébergement right -->
+                <aside class="sideTotal sideRight">
+                    <div class="titreAside">
+                        <h2>Les plus populaires</h2>
+                        <i class="fa-solid fa-star popStar"></i>
+                    </div>
+                    <div class="populaireItem">
+                        <a href="">
+                            <img src="./assests/imgs/hebergement/emile-guillemot.jpg" alt="Hôtel le soleil du matin">
+                            <div class="itemDescriptPop">
+                                <h4>Hôtel le soleil du matin</h4>
+                                <p>Nuit à partir de 128 <strong>€</strong></p>
+                                <div class="notation">
+                                    <i class="fas fa-star blueStar"></i>
+                                    <i class="fas fa-star blueStar"></i>
+                                    <i class="fas fa-star blueStar"></i>
+                                    <i class="fas fa-star blueStar"></i>
+                                    <i class="fas fa-star blueStar"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="populaireItem">
+                        <a href="">
+                            <img src="./assests/imgs/hebergement/aw-creative.jpg" alt="Au coeur de l'eau Chambres d'hôtes">
+                            <div class="itemDescriptPop">
+                                <h4>Au coeur de l'eau Chambres d'hôtes</h4>
+                                <p>Nuit à partir de 71 <strong>€</strong></p>
+                                <div class="notation">
+                                    <i class="fas fa-star blueStar"></i>
+                                    <i class="fas fa-star blueStar"></i>
+                                    <i class="fas fa-star blueStar"></i>
+                                    <i class="fas fa-star blueStar"></i>
+                                    <i class="fas fa-star greyStar"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="populaireItem">
+                        <a href="">
+                            <img src="./assests/imgs/hebergement/febrian-zakaria-2.jpg" alt="Hôtel tout bleu et blanc">
+                            <div class="itemDescriptPop">
+                                <h4>Hôtel tout bleu et blanc</h4>
+                                <p>Nuit à partir de 68 <strong>€</strong></p>
+                                <div class="notation">
+                                    <i class="fas fa-star blueStar"></i>
+                                    <i class="fas fa-star blueStar"></i>
+                                    <i class="fas fa-star blueStar"></i>
+                                    <i class="fas fa-star blueStar"></i>
+                                    <i class="fas fa-star greyStar"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </aside>
             </section>
 
+            <!-- Activités à Marseille -->
+            <section class="activite" id="activites">
+                <h2>Activités à Marseille</h2>
+                <article class="fullSide">
+                    <div class="activiteItem">
+
+                    </div>
+                </article>
+            </section>
             
         </article>
     </main>
