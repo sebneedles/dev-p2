@@ -1,5 +1,40 @@
 /* ------------------------
-Laptops & fullscreen
+Standards screens
+------------------------ */
+@media screen and (max-width: 1024px) {
+    .filterItem {
+        border: 2px solid #D9D9D9;
+        margin: 0px 22px 8px 0px;
+        display: flex;
+        align-items: center;
+        border-radius: 30px;
+        transition: 300ms;
+    }
+
+    .itemDescriptPop {
+        margin: 0 20px;
+    }
+
+    .itemDescriptPop h4 {
+        font-weight: 600;
+        margin: 5px 0;
+        font-size: 15px;
+    }
+
+    .itemDescriptHeberg h4 {
+        font-weight: 600;
+        margin: 5px 0 0 0;
+        font-size: 15px;
+    }
+
+    .notation {
+        display: flex;
+        height: 40%;
+        align-items: self-end;
+    }
+}
+/* ------------------------
+Laptops
 ------------------------ */
 @media screen and (max-width: 992px) {
     .formFilter {
@@ -19,26 +54,9 @@ Laptops & fullscreen
     }
 
     .itemDescriptPop p {
-        margin: 5px 0 28px 0;
+        /* margin: 5px 0 28px 0; */
         font-size: 13px;
     }
-
-    /* .hebergement {
-        flex-flow: column;
-        width: 100%;
-    }
-
-    .sideLeft {
-        width: 100%;
-        border-radius: unset;
-    }
-
-    .sideRight {
-        width: 100%;
-        height: 750px;
-        margin: 32px auto;
-        border-radius: unset;
-    } */
 }
 
 /* ------------------------
@@ -62,7 +80,7 @@ Smartphones & tablets
         display: flex;
         place-self: unset;
         width: 100%;
-        margin-top: 30px;
+        margin-top: 20px;
     }
     nav li {
         width: 50%;
@@ -72,7 +90,7 @@ Smartphones & tablets
     nav li a {
     color: #000;
     text-decoration: none;
-    padding: 3px 0 15px 0;
+    padding: 3px 0 12px 0;
     border-top: unset;
     border-bottom: #F2F2F2 3px solid;
     }
@@ -82,7 +100,7 @@ Smartphones & tablets
         text-decoration: none;
         border-bottom: #0065FC 3px solid;
         border-top: unset;
-        padding: 3px 0 15px 0;
+        padding: 3px 0 12px 0;
     }
 
 /* ----- Main ----- */
@@ -92,9 +110,21 @@ Smartphones & tablets
         margin-top: 80px;
     }
 
+    main p {
+        margin-top: 0;
+    }
+
+    h1 {
+        margin-top: 0;
+    }
+
     .formFilter {
         width: 90%;
         margin: 0 auto;
+    }
+
+    .txtFilter {
+        font-weight: 600;
     }
 
 /* ----- Formulaire ----- */
@@ -135,18 +165,18 @@ Smartphones & tablets
     }
 
     .filterItem {
-        margin: 10px 24px 10px 0px;
+        margin: 10px 0px 4px 0px;
     }
 
     .iconResult {
         height: 22px;
-        width: 26px;
+        width: 30px;
         border: solid 3px #F2F2F2;
         border-radius: 50%;
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-right: 23px;
+        margin-right: 12px;
         color: #0065FC;
         font-size: 12px;
         font-weight: 700;
@@ -170,7 +200,7 @@ Smartphones & tablets
     .hebergementItem {
         width: 100%;
         background-color: #fff;
-        height: 240px;
+        height: 200px;
         min-height: 190px;
         box-shadow: 0px 0px 5px 5px #f2f2f2;
         margin: 5% auto;
@@ -197,7 +227,125 @@ Smartphones & tablets
     }
 
     .itemDescriptPop p {
-        margin: 5px 0 28px 0;
+        margin: 5px 0 0 0;
         font-size: 14px;
+    }
+
+/* ----- Activites ----- */
+    .cardActiviteContent {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cardFullContent {
+        width: 100%;
+    }
+
+    .cardMediumContent {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .fullCardItem {
+        height: 240px;
+        margin: 20px 0;
+    }
+
+    .fullCardItem a {
+        height: 100%;
+        width: 100%;
+        text-decoration: none;
+        color: #000;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .fullCardItem figure img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .fullCardItem figcaption {
+        font-size: 16px;
+    }
+
+    .mediumCardItem {
+        height: 240px;
+        margin: 20px 0;
+    }
+
+    .mediumCardItem a {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .mediumCardItem figure {
+        display: flex;
+        flex-flow: column;
+        margin: auto;
+        width: 100%;
+        object-fit: cover;
+        height: 100%;
+    }
+
+    .mediumCardItem figcaption {
+        font-size: 16px;
+    }
+
+    .smallCardItem {
+        height: 240px;
+        margin: 20px 0;
+    }
+
+    .smallCardItem figure img {
+        height: 186px;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .smallCardItem figcaption {
+        font-size: 16px;
+    }
+
+    /* ------------------------
+    Footer
+    ------------------------ */
+    footer {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footerWidth {
+        flex-direction: column;
+    }
+
+    .footerItem {
+        margin-bottom: 20px;
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+@media screen and (max-width: 320px) {
+    .iconResult {
+        height: 22px;
+        width: 35px;
+    }
+
+    .notation {
+        display: flex;
+        height: 30%;
+        align-items: self-end;
     }
 }
