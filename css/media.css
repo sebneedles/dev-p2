@@ -1,40 +1,5 @@
 /* ------------------------
-Standards screens
------------------------- */
-@media screen and (max-width: 1024px) {
-    .filterItem {
-        border: 2px solid #D9D9D9;
-        margin: 0px 22px 8px 0px;
-        display: flex;
-        align-items: center;
-        border-radius: 30px;
-        transition: 300ms;
-    }
-
-    .itemDescriptPop {
-        margin: 0 20px;
-    }
-
-    .itemDescriptPop h4 {
-        font-weight: 600;
-        margin: 5px 0;
-        font-size: 15px;
-    }
-
-    .itemDescriptHeberg h4 {
-        font-weight: 600;
-        margin: 5px 0 0 0;
-        font-size: 15px;
-    }
-
-    .notation {
-        display: flex;
-        height: 40%;
-        align-items: self-end;
-    }
-}
-/* ------------------------
-Laptops
+Laptops 992px
 ------------------------ */
 @media screen and (max-width: 992px) {
     .formFilter {
@@ -42,11 +7,19 @@ Laptops
     }
 
     .itemDescriptHeberg h4 {
-        font-size: 13px;
+        font-size: 14px;
+    }
+
+    .blueStar {
+        font-size: 10px;
+    }
+
+    .greyStar {
+        font-size: 10px;
     }
 
     .itemDescriptPop h4 {
-        font-size: 13px;
+        font-size: 14px;
     }
 
     .itemDescriptHeberg p {
@@ -54,13 +27,25 @@ Laptops
     }
 
     .itemDescriptPop p {
-        /* margin: 5px 0 28px 0; */
         font-size: 13px;
     }
+
+    .itemDescriptPop {
+        margin-left: 10px;
+        padding-left: 0;
+    }
+
+    .populaireItem img {
+        width: 45%;
+    }
+
 }
 
+    
+
+    
 /* ------------------------
-Smartphones & tablets
+Smartphones & tablets 768px
 ------------------------ */
 @media screen and (max-width: 768px) {
 /* ----- Header ----- */
@@ -157,29 +142,39 @@ Smartphones & tablets
         display: flex;
         flex-wrap: wrap;
         width: 100%;
-        margin: 30px 0;
-        justify-content: space-between;
+        margin: 20px 0;
+        justify-content: flex-start;
     }
     h2 {
         width: 100%;
     }
 
     .filterItem {
-        margin: 10px 0px 4px 0px;
+        margin-right: 4%;
+        margin-bottom: 4%;
     }
 
     .iconResult {
-        height: 22px;
-        width: 30px;
-        border: solid 3px #F2F2F2;
-        border-radius: 50%;
+        height: 20px;
+        width: 22px;
+        border: solid 1px #D9D9D9;
+        border-radius: 15px;
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-right: 12px;
+        margin-right: 10px;
         color: #0065FC;
         font-size: 12px;
         font-weight: 700;
+    }
+
+    .resultFilter {
+        display: flex;
+        align-items: normal;
+    }
+
+    .resultFilter p {
+        margin-top: 4px;
     }
 
 /* ----- Hebergements ----- */
@@ -216,14 +211,6 @@ Smartphones & tablets
 
     .itemDescriptPop h4 {
         font-size: 16px;
-    }
-
-    .itemDescriptHeberg {
-        justify-content: center;
-    }
-
-    .itemDescriptHeberg p {
-        font-size: 14px;
     }
 
     .itemDescriptPop p {
@@ -269,10 +256,6 @@ Smartphones & tablets
         object-fit: cover;
     }
 
-    .fullCardItem figcaption {
-        font-size: 16px;
-    }
-
     .mediumCardItem {
         height: 240px;
         margin: 20px 0;
@@ -292,10 +275,6 @@ Smartphones & tablets
         width: 100%;
         object-fit: cover;
         height: 100%;
-    }
-
-    .mediumCardItem figcaption {
-        font-size: 16px;
     }
 
     .smallCardItem {
