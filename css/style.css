@@ -355,6 +355,17 @@ Hébergement Left
     margin-block-end: 0;
 }
 
+.btnPlus a {
+    text-decoration: none;
+    color: #000;
+    transition: 300ms;
+}
+
+.btnPlus a:hover {
+    color: #0065FC;
+    transition: 300ms;
+}
+
 /* ------------------------
 Hébergement Right
 ------------------------ */

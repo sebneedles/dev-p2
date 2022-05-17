@@ -43,7 +43,6 @@ Laptops 992px
 
     
 
-    
 /* ------------------------
 Smartphones & tablets 768px
 ------------------------ */
@@ -216,6 +215,10 @@ Smartphones & tablets 768px
     .itemDescriptPop p {
         margin: 5px 0 0 0;
         font-size: 14px;
+    }
+
+    .btnPlus {
+        margin-top: 20px;
     }
 
 /* ----- Activites ----- */
